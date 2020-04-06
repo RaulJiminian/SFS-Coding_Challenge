@@ -2,37 +2,80 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  border: 1px solid black;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th {
+  border: 1px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+td {
+  border: 1px solid black;
+}
+
+.td-balance {
+  text-align: right;
+}
+
+.tr-row-size {
+  background: cadetblue;
+}
+
+.tr-sub-total {
+  background: sandybrown;
+}
+
+.tr-total {
+  background: cadetblue;
+}
+
+.td-right {
+  text-align: right;
+  padding-left: 20px;
+}
+
+.td-left {
+  text-align: left;
+}
+
+/* label CSS is known as "Clipping CSS Snippet": https://www.nomensa.com/blog/2017/how-improve-web-accessibility-hiding-elements */
+label {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.main-form-div {
+  border: 1px solid black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 25px;
+  margin: 20px auto 0 auto;
+  width: 55%;
+}
+
+.form-div {
+  margin: 0 auto;
+}
+
+.sub-form-div {
+  display: grid;
+  grid-template-columns: 135px 135px 135px 135px 135px 100px;
+}
+
+.delete-hover {
+  background: white;
+}
+
+.delete-hover:hover {
+  background: lightblue;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-weight: 900;
 }
